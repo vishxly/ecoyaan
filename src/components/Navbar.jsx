@@ -1,11 +1,20 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    if (isOpen) {
+      toggleSidebar();
+    }
   };
 
   return (
@@ -13,32 +22,40 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 md:mr-auto">
-            <a href="/" className="text-green-500 font-bold text-4xl">
+            <a
+              href="#"
+              onClick={() => handleNavigation("/")}
+              className="text-green-500 font-bold text-4xl"
+            >
               Ecoyaan
             </a>
           </div>
           <div className="hidden md:block">
             <div className="flex space-x-8 text-gray-700">
               <a
-                href="/"
+                href="#"
+                onClick={() => handleNavigation("/")}
                 className="hover:text-green-500 px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
               >
                 Home
               </a>
               <a
-                href="/about"
+                href="#"
+                onClick={() => handleNavigation("/about")}
                 className="hover:text-green-500 px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
               >
                 About Us
               </a>
               <a
-                href="/sell"
+                href="#"
+                onClick={() => handleNavigation("/sell")}
                 className="hover:text-green-500 px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
               >
                 Sell on Ecoyaan
               </a>
               <a
-                href="/careers"
+                href="#"
+                onClick={() => handleNavigation("/careers")}
                 className="hover:text-green-500 px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
               >
                 Careers
@@ -82,25 +99,29 @@ const Navbar = () => {
             <IoMdClose className="text-2xl" />
           </button>
           <a
-            href="/"
+            href="#"
+            onClick={() => handleNavigation("/")}
             className="hover:bg-gray-200 hover:text-green-500 block px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
           >
             Home
           </a>
           <a
-            href="/about"
+            href="#"
+            onClick={() => handleNavigation("/about")}
             className="hover:bg-gray-200 hover:text-green-500 block px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
           >
             About Us
           </a>
           <a
-            href="/sell"
+            href="#"
+            onClick={() => handleNavigation("/sell")}
             className="hover:bg-gray-200 hover:text-green-500 block px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
           >
             Sell on Ecoyaan
           </a>
           <a
-            href="/careers"
+            href="#"
+            onClick={() => handleNavigation("/careers")}
             className="hover:bg-gray-200 hover:text-green-500 block px-4 py-3 rounded-md text-xl font-semibold transition duration-300"
           >
             Careers
