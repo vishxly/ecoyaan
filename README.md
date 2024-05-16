@@ -34,7 +34,7 @@ We welcome contributions from the community! If you'd like to contribute to Ecoy
 
 ## Feedback
 
-Have any questions, suggestions, or feedback? Feel free to reach out to us at support@ecoyaan.com.
+Have any questions, suggestions, or feedback? Feel free to reach out to us.
 
 ## License
 
