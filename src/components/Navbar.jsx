@@ -89,7 +89,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:hidden fixed inset-0 z-10 bg-white transition-transform duration-300 ease-in-out`}
+        } md:hidden fixed inset-0 z-10 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 transition-transform duration-300 ease-in-out`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 relative">
           <button
