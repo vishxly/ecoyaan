@@ -1,16 +1,16 @@
-import React from "react";
-
+import HomePageSlider from "./HomePageSlider";
 const HomePage = () => {
   return (
     <div className="bg-gray-100 overflow-hidden">
       {/* Hero Section */}
-      <div className="relative bg-green-500 py-24 sm:py-32">
+      <div className="relative bg-gradient-to-r from-red-500 to-green-500 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+          <HomePageSlider />
+          <div className="text-center text-white">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
               Join the Sustainable Movement
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-100">
+            <p className="mt-6 text-lg leading-8">
               Discover eco-friendly products and embrace a greener lifestyle.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -22,7 +22,7 @@ const HomePage = () => {
               </a>
               <a
                 href="#"
-                className="text-sm font-semibold leading-6 text-white hover:text-gray-100"
+                className="text-sm font-semibold leading-6 hover:text-gray-100"
               >
                 Learn More <span aria-hidden="true">→</span>
               </a>
@@ -125,17 +125,20 @@ const HomePage = () => {
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:max-w-none lg:grid-cols-3">
-            <div className="flex flex-col gap-4">
-              <img
-                className="aspect-[3/2] w-full rounded-2xl object-cover"
-                src="https://ecoyaan.com/images/Impact.png"
-                alt=""
-              />
-              <p className="text-xl font-semibold leading-8 text-gray-900">
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 animate-fade-in-up hover:scale-105 transition-transform duration-300">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  className="aspect-[3/2] w-full rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
+                  src="https://ecoyaan.com/images/Impact.png"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
+              </div>
+              <h3 className="text-xl font-semibold leading-8 text-gray-900 animate-fade-in-up delay-100">
                 Join our community in creating a more sustainable future for
                 everyone
-              </p>
-              <p className="text-base leading-7 text-gray-600">
+              </h3>
+              <p className="text-base leading-7 text-gray-600 animate-fade-in-up delay-200">
                 At Ecoyaan, we are more than just a platform. Our vision is to
                 build an eco-conscious community for people and products.
                 Consider us your partner for all things sustainable. To keep you
@@ -145,16 +148,19 @@ const HomePage = () => {
                 impact on the environment.
               </p>
             </div>
-            <div className="flex flex-col gap-4">
-              <img
-                className="aspect-[3/2] w-full rounded-2xl object-cover"
-                src="file:///C:/Users/91866/Downloads/videoframe_7466.png"
-                alt=""
-              />
-              <p className="text-xl font-semibold leading-8 text-gray-900">
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 animate-fade-in-up hover:scale-105 transition-transform duration-300">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  className="aspect-[3/2] w-full rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
+                  src="https://raw.githubusercontent.com/yadavvshall/ecoyaan/main/src/assets/ecoyaan.png"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
+              </div>
+              <h3 className="text-xl font-semibold leading-8 text-gray-900 animate-fade-in-up delay-100">
                 Carefully curated Eco-friendly products
-              </p>
-              <p className="text-base leading-7 text-gray-600">
+              </h3>
+              <p className="text-base leading-7 text-gray-600 animate-fade-in-up delay-200">
                 We believe that every purchase you make can have a positive
                 impact on the planet and the future. Soon, we will be connecting
                 you with eco-friendly and sustainable products that are
@@ -162,16 +168,20 @@ const HomePage = () => {
                 benefits.
               </p>
             </div>
-            <div className="flex flex-col gap-4">
-              <img
-                className="aspect-[3/2] w-full rounded-2xl object-cover"
-                src="https://ecoyaan.com/images/OurStory4.png"
-                alt=""
-              />
-              <p className="text-xl font-semibold leading-8 text-gray-900">
+
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 animate-fade-in-up hover:scale-105 transition-transform duration-300">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img
+                  className="aspect-[3/2] w-full rounded-2xl object-cover transition-transform duration-300 hover:scale-105"
+                  src="https://ecoyaan.com/images/OurStory4.png"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
+              </div>
+              <h3 className="text-xl font-semibold leading-8 text-gray-900 animate-fade-in-up delay-100">
                 For businesses that care deeply about sustainability
-              </p>
-              <p className="text-base leading-7 text-gray-600">
+              </h3>
+              <p className="text-base leading-7 text-gray-600 animate-fade-in-up delay-200">
                 Do you run a business that is committed to sustainability in
                 every aspect of your work? Do you want to showcase your products
                 to an incredible audience of eco-conscious consumers who care?

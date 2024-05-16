@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { IoMdClose } from 'react-icons/io';
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white shadow-lg relative">
+    <div className="bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg relative rounded-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 md:mr-auto">
@@ -69,10 +69,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Sidebar */}
       <div
         className={`${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
+          isOpen ? "translate-x-0" : "-translate-x-full"
         } md:hidden fixed inset-0 z-10 bg-white transition-transform duration-300 ease-in-out`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 relative">
