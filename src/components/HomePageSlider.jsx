@@ -17,23 +17,21 @@ const HomePageSlider = () => {
     <Slider {...settings}>
       <div>
         <img
-          className="w-full"
+          className="rounded-md shadow-md hover:shadow-lg transition duration-300 w-full"
           src="https://ecoyaan.com/images/carousel-3.png"
-          alt="Are you a business that truly cares about sustainability?
-          Are you a business that truly cares about sustainability?
-          We would love to work with you"
+          alt="Are you a business that truly cares about sustainability? We would love to work with you"
         />
       </div>
       <div>
         <img
-          className="w-full"
+          className="rounded-md shadow-md hover:shadow-lg transition duration-300 w-full"
           src="https://ecoyaan.com/images/carousel-2.png"
           alt="Slide 2"
         />
       </div>
       <div>
         <img
-          className="w-full"
+          className="rounded-md shadow-md hover:shadow-lg transition duration-300 w-full"
           src="https://ecoyaan.com/images/carousel-1.png"
           alt="Slide 3"
         />
